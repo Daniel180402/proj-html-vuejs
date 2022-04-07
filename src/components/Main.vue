@@ -3,7 +3,7 @@
         <div class="wrapper">
             <div class="jumbotron-wrapper container py-5 flex-wrap d-flex">
                 <div class="my-card position-relative" v-for="(element, index) in jumboContent" :key="index">
-                    <img :src="`../assets/img/${element.image}`" :alt="element.title">
+                    <img :src="element.img" :alt="element.title">
                     <div class="card-text position-absolute text-white p-3">
                         <div class="card-category px-2">
                             <span class="card-category-text fw-bold">{{element.category}}</span>
@@ -23,32 +23,32 @@ data: function() {
     return {
         jumboContent: [
             {
-                image: "@/assets/img/blog-46.jpg",
+                img: require("@/assets/img/blog-46.jpg"),
                 category: "PHOTOGRAPHY",
                 title: "How to Take Better Concert Pictures in 30 Seconds"
             },
             {
-                image: "@/assets/img/blog-47.jpg",
+                img: require("@/assets/img/blog-47.jpg"),
                 category: "GADGET",
                 title: "Gadgets That Make Your Smartphone Even Smarter"
             },
             {
-                image: "",
+                img: require("@/assets/img/blog-48.jpg"),
                 category: "TRAVEL",
                 title: "20 Top-Rated Tourist Attractions in Manhattan"
             },
             {
-                image: "",
+                img: require("@/assets/img/blog-49.jpg"),
                 category: "LIFESTYLE",
                 title: "The Best Way to Ride a Motorcycle"
             },
             {
-                image: "",
+                img: require("@/assets/img/blog-50.jpg"),
                 category: "TRAVEL",
                 title: "5 Fun Things to Do at the Beach"
             },
             {
-                image: "",
+                img: require("@/assets/img/blog-51.jpg"),
                 category: "RECIPES",
                 title: "Amazingly Fresh Fruits And Herbs Drinks For Summer"
             },
