@@ -34,7 +34,7 @@
                     <div class="col-3">
                         <h5>{{categoriesTitle}}</h5>
                         <div class="categories-wrapper d-flex flex-wrap">
-                            <div class="category p-1 px-2 rounded-3 m-1" v-for="element in categories" :key="element + 'comments'">
+                            <div class="category p-1 px-2 rounded-3 m-1" v-for="element in postCategories" :key="element + 'comments'">
                                 <p class="text-white fw-bold">{{element}}</p>
                             </div>
                         </div>
@@ -61,6 +61,7 @@
 <script>
 export default {
 name: "pageFooter",
+props : ["postCategories"],
 data: function() {
     return {
         aboutBlogTitle: "ABOUT THE BLOG",
@@ -98,22 +99,7 @@ data: function() {
                 postTitle: "Lorem ipsum dolor sit amet consectetur, adipisicing.",
                 commentDate: "11.13 AM Nov 15th"
             }
-        ],
-        categories :[
-            "GADGETS",
-            "PHOTOGRAPHY",
-            "LIFESTYLE",
-            "FASHION",
-            "RECIPES",
-            "TRAVEL",
-            "BUSINESS",
-            "ARCHITECTURE",
-            "REVIEWS",
-            "SPORTS",
-            "VIDEOS",
-            "TECHNOLOGY",
-            "DESIGN"
-        ] 
+        ]
     }
 }
 }

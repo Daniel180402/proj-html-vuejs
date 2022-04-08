@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <Header/>
-    <Main/>
-    <Footer/>
+    <Main :postCategories="categories"/>
+    <Footer :postCategories="categories"/>
   </div>
 </template>
 
@@ -17,6 +17,25 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data: function(){
+    return {
+      categories :[
+        "GADGETS",
+        "PHOTOGRAPHY",
+        "LIFESTYLE",
+        "FASHION",
+        "RECIPES",
+        "TRAVEL",
+        "BUSINESS",
+        "ARCHITECTURE",
+        "REVIEWS",
+        "SPORTS",
+        "VIDEOS",
+        "TECHNOLOGY",
+        "DESIGN"
+      ]
+    }
   }
 }
 </script>

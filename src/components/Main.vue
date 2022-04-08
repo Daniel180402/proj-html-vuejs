@@ -1,6 +1,6 @@
 <template>
     <main>
-        <Jumbotron/>
+        <Jumbotron :postCategories="postCategories"/>
         <PostsSection/>
     </main>
 </template>
@@ -11,6 +11,7 @@ import PostsSection from "./PostsSection.vue"
 
 export default {
     name: "mainPage",
+    props : ["postCategories"],
     components: {
         Jumbotron,
         PostsSection,

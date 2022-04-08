@@ -19,6 +19,7 @@
 <script>
 export default {
     name:"MainJumbotron",
+    props: ["postCategories"],
     data: function() {
     return {
         jumboContent: [
