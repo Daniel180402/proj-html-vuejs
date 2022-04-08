@@ -4,7 +4,7 @@
             <div class="sign-in container d-flex align-items-center">
                 <p class="text-white"> Everything about lifestyle, Travel and Gadgets!</p>
                 <!-- <p v-for="element in signIn" :key="element"> {{element}} </p> -->
-                <p class="px-4 text-white" v-for="(element, index) in signIn" :key="index"> {{signIn[index]}} </p>
+                <p class="px-4 text-white" v-for="(element, index) in signIn" :key="index"><a class="text-decoration-none text-white" href="#">{{signIn[index]}}</a></p>
             </div>
         </div>
         <div class="logo-wrapper container d-flex align-items-center">
@@ -13,8 +13,8 @@
         <div class="navbar-wrapper d-flex align-items-center">
             <div class="container d-flex align-items-center justify-content-between">
                 <nav class="my-navbar d-flex">
-                    <li class="list-unstyled pe-5 fw-bold active-tab">HOME</li>
-                    <li class="list-unstyled pe-5 fw-bold" v-for="(element, index) in navbarTabs" :key="index"> {{navbarTabs[index]}} </li>
+                    <li class="list-unstyled pe-5 fw-bold active-tab"><a class="text-decoration-none" href="#">HOME</a></li>
+                    <li class="list-unstyled pe-5 fw-bold" v-for="(element, index) in navbarTabs" :key="index"><a class="text-decoration-none text-dark" href="#">{{navbarTabs[index]}}</a></li>
                 </nav>
                 <div class="input-group w-25">
                     <div class="input-group-prepend">
