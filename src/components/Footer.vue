@@ -34,7 +34,7 @@
                     <div class="col-3">
                         <h5>{{categoriesTitle}}</h5>
                         <div class="categories-wrapper d-flex flex-wrap">
-                            <div class="category p-1 px-2 rounded-3 m-1" v-for="element in postCategories" :key="element + 'comments'">
+                            <div class="category p-1 px-2 rounded-3 m-1" v-for="element in postCategories" :key="element + 'categories'">
                                 <p class="text-white fw-bold">{{element}}</p>
                             </div>
                         </div>
