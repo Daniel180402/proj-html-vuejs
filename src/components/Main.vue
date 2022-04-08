@@ -23,32 +23,32 @@ data: function() {
     return {
         jumboContent: [
             {
-                img: require("@/assets/img/blog-46.jpg"),
+                img: require("../assets/img/blog-46.jpg"),
                 category: "PHOTOGRAPHY",
                 title: "How to Take Better Concert Pictures in 30 Seconds"
             },
             {
-                img: require("@/assets/img/blog-47.jpg"),
+                img: require("../assets/img/blog-47.jpg"),
                 category: "GADGET",
                 title: "Gadgets That Make Your Smartphone Even Smarter"
             },
             {
-                img: require("@/assets/img/blog-48.jpg"),
+                img: require("../assets/img/blog-48.jpg"),
                 category: "TRAVEL",
                 title: "20 Top-Rated Tourist Attractions in Manhattan"
             },
             {
-                img: require("@/assets/img/blog-49.jpg"),
+                img: require("../assets/img/blog-49.jpg"),
                 category: "LIFESTYLE",
                 title: "The Best Way to Ride a Motorcycle"
             },
             {
-                img: require("@/assets/img/blog-50.jpg"),
+                img: require("../assets/img/blog-50.jpg"),
                 category: "TRAVEL",
                 title: "5 Fun Things to Do at the Beach"
             },
             {
-                img: require("@/assets/img/blog-51.jpg"),
+                img: require("../assets/img/blog-51.jpg"),
                 category: "RECIPES",
                 title: "Amazingly Fresh Fruits And Herbs Drinks For Summer"
             },

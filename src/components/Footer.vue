@@ -45,7 +45,7 @@
         <div class="footer-bottom-wrapper">
             <div class="footer-bottom d-flex justify-content-between container">
                 <div class="logo-copyright d-flex align-items-center">
-                    <img class="logo-footer" src="@/assets/img/logo-footer.png" alt="">
+                    <img class="logo-footer" src="../assets/img/logo-footer.png" alt="">
                     <span class="ps-5">&copy; Copyright 2020. All Rights Reserved.</span>
                 </div>
                 <div class="footer-options d-flex align-items-center">
@@ -77,12 +77,12 @@ data: function() {
         ],
         recentPosts :[
             {
-                image: require("@/assets/img/our-office-4-square.jpg"),
+                image: require("../assets/img/our-office-4-square.jpg"),
                 title: "Lorem ipsum dolor sit amet consectetur, adipisicing.",
                 postDate: "12.53 AM Dec 19th"
             },
             {
-                image: require("@/assets/img/our-office-5-square.jpg"),
+                image: require("../assets/img/our-office-5-square.jpg"),
                 title: "Lorem ipsum dolor sit amet consectetur.",
                 postDate: "12.53 AM Dec 20th"
             }
