@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="wrapper">
+        <div class="wrapper mb-5">
             <div class="jumbotron-wrapper container py-5 flex-wrap d-flex">
                 <div class="my-card position-relative" v-for="(element, index) in jumboContent" :key="index">
                     <img :src="element.img" :alt="element.title">
@@ -72,12 +72,12 @@ export default {
         .my-card{
             width: calc((100% / 3) - 20px);
 
-            &:hover{
-                filter: brightness(80%);
-            }
-
             & > img{
                 width: 100%;
+
+                &:hover{
+                filter: brightness(80%);
+                }
             }
 
             .card-text{
