@@ -13,8 +13,8 @@
         <div class="navbar-wrapper d-flex align-items-center">
             <div class="container d-flex align-items-center justify-content-between">
                 <nav class="my-navbar d-flex">
-                    <li class="list-unstyled pe-5 fw-bold active-tab"><a class="text-decoration-none" href="#">HOME</a></li>
-                    <li class="list-unstyled pe-5 fw-bold" v-for="(element, index) in navbarTabs" :key="index"><a class="text-decoration-none text-dark" href="#">{{navbarTabs[index]}}</a></li>
+                    <li class="list-unstyled pe-5 fw-bold"><a class="text-decoration-none active-tab" href="#">HOME</a></li>
+                    <li class="list-unstyled pe-5 fw-bold" v-for="(element, index) in navbarTabs" :key="index"><a class="text-decoration-none" href="#">{{navbarTabs[index]}}</a></li>
                 </nav>
                 <div class="input-group w-25">
                     <div class="input-group-prepend">
@@ -80,6 +80,14 @@ header{
         border-top: 1px solid lightgray;
         border-bottom: 1px solid lightgray;
 
+        a{
+            color: black;
+
+            &:hover{
+            color: lightgray;
+            }
+        }
+        
         .active-tab{
             color: $bg-sign-in;
         }
