@@ -1,5 +1,5 @@
 <template>
-    <div class="category-carousel-wrapper">
+    <div class="category-carousel-wrapper mb-5">
         <div class="container h-100 w-100 d-flex justify-content-center align-items-center">
             <!-- <button @click="scrollLeft" class="prev p-2 rounded-circle"> Prev </button> -->
             <div class="slider-wrapper h-100 d-flex align-items-center overflow-auto pt-2">

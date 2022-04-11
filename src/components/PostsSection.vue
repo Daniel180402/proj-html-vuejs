@@ -9,7 +9,7 @@
                         <div class="popular-posts-text d-flex flex-column justify-content-start ps-3">
                             <p class="mb-0 pb-1">{{element.articleName}}</p>
                             <div>
-                                <p class="text-date fw-light">{{element.articleDate}}</p>
+                                <p class="text-date fw-light"> {{element.articleDateMonth}} {{element.articleDate}}</p>
                             </div>
                         </div>
                     </div>
@@ -54,39 +54,13 @@
 <script>
 export default {
     name:"PostsSection",
+    props: ["popularPosts"],
     data: function() {
         return {
             popularPostsTitle: "POPULAR POSTS",
             recentPostsTitle: "RECENT POSTS",
             featuredPostsTitle: "FEATURED POSTS",
             featuredAuthorTitle: "FEATURED AUTHOR",
-            popularPosts: [
-                {
-                    image: require("../assets/img/blog-55.jpg"),
-                    articleName: "Simple Ways to Have a Pretty Face",
-                    articleDate: "January 12, 2019"
-                },
-                {
-                    image: require("../assets/img/blog-56.jpg"),
-                    articleName: "Ranking the Greatest Players in Basketball",
-                    articleDate: "January 12, 2019"
-                },
-                {
-                    image: require("../assets/img/blog-57.jpg"),
-                    articleName: "4 Ways to Look Cool in Glasses",
-                    articleDate: "January 12, 2019"
-                },
-                {
-                    image: require("../assets/img/blog-58.jpg"),
-                    articleName: "Top Camper Trailer Towing Tips",
-                    articleDate: "January 12, 2019"
-                },
-                {
-                    image: require("../assets/img/blog-59.jpg"),
-                    articleName: "5 Lovely Walks in New York",
-                    articleDate: "January 12, 2019"
-                },
-            ],
             recentPosts: [
                 {
                     image: require("../assets/img/blog-65.jpg"),
